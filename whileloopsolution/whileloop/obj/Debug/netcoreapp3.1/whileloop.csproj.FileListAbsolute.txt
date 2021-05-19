@@ -1,0 +1,13 @@
+C:\repos\C# shenanigans\whileloopsolution\whileloop\bin\Debug\netcoreapp3.1\whileloop.exe
+C:\repos\C# shenanigans\whileloopsolution\whileloop\bin\Debug\netcoreapp3.1\whileloop.deps.json
+C:\repos\C# shenanigans\whileloopsolution\whileloop\bin\Debug\netcoreapp3.1\whileloop.runtimeconfig.json
+C:\repos\C# shenanigans\whileloopsolution\whileloop\bin\Debug\netcoreapp3.1\whileloop.runtimeconfig.dev.json
+C:\repos\C# shenanigans\whileloopsolution\whileloop\bin\Debug\netcoreapp3.1\whileloop.dll
+C:\repos\C# shenanigans\whileloopsolution\whileloop\bin\Debug\netcoreapp3.1\whileloop.pdb
+C:\repos\C# shenanigans\whileloopsolution\whileloop\obj\Debug\netcoreapp3.1\whileloop.csprojAssemblyReference.cache
+C:\repos\C# shenanigans\whileloopsolution\whileloop\obj\Debug\netcoreapp3.1\whileloop.AssemblyInfoInputs.cache
+C:\repos\C# shenanigans\whileloopsolution\whileloop\obj\Debug\netcoreapp3.1\whileloop.AssemblyInfo.cs
+C:\repos\C# shenanigans\whileloopsolution\whileloop\obj\Debug\netcoreapp3.1\whileloop.csproj.CoreCompileInputs.cache
+C:\repos\C# shenanigans\whileloopsolution\whileloop\obj\Debug\netcoreapp3.1\whileloop.dll
+C:\repos\C# shenanigans\whileloopsolution\whileloop\obj\Debug\netcoreapp3.1\whileloop.pdb
+C:\repos\C# shenanigans\whileloopsolution\whileloop\obj\Debug\netcoreapp3.1\whileloop.genruntimeconfig.cache
