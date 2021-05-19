@@ -1,0 +1,13 @@
+C:\repos\C# shenanigans\nightpractice2solution\nightpractice2\bin\Debug\netcoreapp3.1\nightpractice2.exe
+C:\repos\C# shenanigans\nightpractice2solution\nightpractice2\bin\Debug\netcoreapp3.1\nightpractice2.deps.json
+C:\repos\C# shenanigans\nightpractice2solution\nightpractice2\bin\Debug\netcoreapp3.1\nightpractice2.runtimeconfig.json
+C:\repos\C# shenanigans\nightpractice2solution\nightpractice2\bin\Debug\netcoreapp3.1\nightpractice2.runtimeconfig.dev.json
+C:\repos\C# shenanigans\nightpractice2solution\nightpractice2\bin\Debug\netcoreapp3.1\nightpractice2.dll
+C:\repos\C# shenanigans\nightpractice2solution\nightpractice2\bin\Debug\netcoreapp3.1\nightpractice2.pdb
+C:\repos\C# shenanigans\nightpractice2solution\nightpractice2\obj\Debug\netcoreapp3.1\nightpractice2.csprojAssemblyReference.cache
+C:\repos\C# shenanigans\nightpractice2solution\nightpractice2\obj\Debug\netcoreapp3.1\nightpractice2.AssemblyInfoInputs.cache
+C:\repos\C# shenanigans\nightpractice2solution\nightpractice2\obj\Debug\netcoreapp3.1\nightpractice2.AssemblyInfo.cs
+C:\repos\C# shenanigans\nightpractice2solution\nightpractice2\obj\Debug\netcoreapp3.1\nightpractice2.csproj.CoreCompileInputs.cache
+C:\repos\C# shenanigans\nightpractice2solution\nightpractice2\obj\Debug\netcoreapp3.1\nightpractice2.dll
+C:\repos\C# shenanigans\nightpractice2solution\nightpractice2\obj\Debug\netcoreapp3.1\nightpractice2.pdb
+C:\repos\C# shenanigans\nightpractice2solution\nightpractice2\obj\Debug\netcoreapp3.1\nightpractice2.genruntimeconfig.cache
