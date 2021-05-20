@@ -1,0 +1,13 @@
+C:\repos\C# shenanigans\sendhelpAMonOwnsolution\sendhelpAMonOwn\bin\Debug\netcoreapp3.1\sendhelpAMonOwn.exe
+C:\repos\C# shenanigans\sendhelpAMonOwnsolution\sendhelpAMonOwn\bin\Debug\netcoreapp3.1\sendhelpAMonOwn.deps.json
+C:\repos\C# shenanigans\sendhelpAMonOwnsolution\sendhelpAMonOwn\bin\Debug\netcoreapp3.1\sendhelpAMonOwn.runtimeconfig.json
+C:\repos\C# shenanigans\sendhelpAMonOwnsolution\sendhelpAMonOwn\bin\Debug\netcoreapp3.1\sendhelpAMonOwn.runtimeconfig.dev.json
+C:\repos\C# shenanigans\sendhelpAMonOwnsolution\sendhelpAMonOwn\bin\Debug\netcoreapp3.1\sendhelpAMonOwn.dll
+C:\repos\C# shenanigans\sendhelpAMonOwnsolution\sendhelpAMonOwn\bin\Debug\netcoreapp3.1\sendhelpAMonOwn.pdb
+C:\repos\C# shenanigans\sendhelpAMonOwnsolution\sendhelpAMonOwn\obj\Debug\netcoreapp3.1\sendhelpAMonOwn.csprojAssemblyReference.cache
+C:\repos\C# shenanigans\sendhelpAMonOwnsolution\sendhelpAMonOwn\obj\Debug\netcoreapp3.1\sendhelpAMonOwn.AssemblyInfoInputs.cache
+C:\repos\C# shenanigans\sendhelpAMonOwnsolution\sendhelpAMonOwn\obj\Debug\netcoreapp3.1\sendhelpAMonOwn.AssemblyInfo.cs
+C:\repos\C# shenanigans\sendhelpAMonOwnsolution\sendhelpAMonOwn\obj\Debug\netcoreapp3.1\sendhelpAMonOwn.csproj.CoreCompileInputs.cache
+C:\repos\C# shenanigans\sendhelpAMonOwnsolution\sendhelpAMonOwn\obj\Debug\netcoreapp3.1\sendhelpAMonOwn.dll
+C:\repos\C# shenanigans\sendhelpAMonOwnsolution\sendhelpAMonOwn\obj\Debug\netcoreapp3.1\sendhelpAMonOwn.pdb
+C:\repos\C# shenanigans\sendhelpAMonOwnsolution\sendhelpAMonOwn\obj\Debug\netcoreapp3.1\sendhelpAMonOwn.genruntimeconfig.cache
