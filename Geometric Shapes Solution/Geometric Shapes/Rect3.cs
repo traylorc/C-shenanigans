@@ -11,6 +11,11 @@ namespace Geometric_Shapes
             
         }
 
+        public override string WhatAmI()
+        {
+            return "Rect3";
+        }
+
         public int Area()
         {
             return Side1 * Side2;

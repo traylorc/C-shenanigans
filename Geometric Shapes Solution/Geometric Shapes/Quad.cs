@@ -18,6 +18,12 @@ namespace Geometric_Shapes
         {
             return Side1 + Side2 + Side3 + Side4;
         }
+
+        public virtual string WhatAmI()
+        {
+            return "Quad";
+        }
+
         public Quad(int s1, int s2, int s3, int s4)
         {
             Side1 = s1;

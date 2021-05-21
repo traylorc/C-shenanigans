@@ -8,5 +8,10 @@ namespace Geometric_Shapes
     {
         public Sqr3(int s) : base(s, s)
         { }
+
+        public override string WhatAmI()
+        {
+            return "Sqr3";
+        }
     }
 }

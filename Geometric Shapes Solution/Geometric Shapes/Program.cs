@@ -6,16 +6,46 @@ namespace Geometric_Shapes
     {
         static void Main(string[] args)
         {
-            var sqr3 = new Sqr3(5);
-            Console.WriteLine($"Perimeter of the Square is {sqr3.Perimeter()} and Area is {sqr3.Area()}");
+            
+            var sqr35 = new Sqr3(5);
+            var sqr37 = new Sqr3(7);
+            var rect31 = new Rect3(4, 7);
+            var rect32 = new Rect3(3, 5);
+            var rect33 = new Rect3(9, 11);
+            var quad10 = new Quad(1, 2, 3, 4);
 
+            var shapes = new Quad[] { sqr35, sqr37, rect31, rect32, rect33, quad10 };
+
+            foreach(var shape in shapes)
+            {
+                Console.WriteLine($"{shape.WhatAmI()} perimeter is {shape.Perimeter()}");
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            var sqr3 = new Sqr3(5);
+            
 
             var rect3 = new Rect3(4,7);
-            Console.WriteLine($"Perimeter of the Rectangle is {rect3.Perimeter()} and Area is {rect3.Area()}");
-
+            
             var quad = new Quad(2, 3, 4, 5);
-            Console.WriteLine($"Perimeter of the Quadrilateral is {quad.Perimeter()}");
+            
 
+           
+            
+            
+            
+            
+            
+            
+            
+            
+            
             var x = 0;
 
 
