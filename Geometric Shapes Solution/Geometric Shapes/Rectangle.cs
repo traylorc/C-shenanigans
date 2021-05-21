@@ -6,6 +6,9 @@ namespace Geometric_Shapes
 {
     class Rectangle
     {
+        
+
+        
         public int Rside1 { get; set; }
         public int Rside2 { get; set; }
 
