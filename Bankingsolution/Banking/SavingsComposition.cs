@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Banking
 {
-    class SavingsComposition
+    class SavingsComposition : IBanking
     {
         private Account account = new Account();
 
@@ -19,7 +19,7 @@ namespace Banking
         {
             return account.Withdrawal(amount);
         }
-        
+
         public bool Transfer(decimal amount, Account toAccount)
         {
             return account.Transfer(amount, toAccount);
@@ -28,6 +28,8 @@ namespace Banking
         {
             account = new Account();
         }
+
+       
 
 
 
@@ -46,5 +48,14 @@ namespace Banking
             Deposit(interest);
         }
 
+        public decimal GetBalance()
+        {
+            return account.Balance;
+        }
+
+        public string GetAccountNumber()
+        {
+            return account.AccountNumber;
+        }
     }
 }

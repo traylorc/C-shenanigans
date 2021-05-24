@@ -6,7 +6,14 @@ namespace Banking
     {
         static void Main(string[] args)
         {
-
+            var sv1 = new SavingsComposition();
+            sv1.Deposit(2000);
+            var cd10 = new CD_composition(5000, 60);
+            var accounts = new IBanking[] { sv1, cd10 };
+            foreach(var acct in accounts)
+            {
+                Console.WriteLine($"Account balance is {acct.GetBalance()}");
+            }
 
 
             var sav1 = new Savings();

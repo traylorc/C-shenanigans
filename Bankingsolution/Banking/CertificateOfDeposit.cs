@@ -65,6 +65,7 @@ namespace Banking
                     break;
             }
 
+        }
             public CertificateOfDeposit(decimal Amount, int Months)
             {
                 this.Months = Months;
@@ -72,6 +73,5 @@ namespace Banking
                 var success = base.Deposit(Amount);
                 CalcAndPayInterestOnDeposit();
             }
-        }
     }
 }

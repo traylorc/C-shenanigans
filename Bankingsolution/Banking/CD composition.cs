@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Banking
 {
-    class CD_composition
+    class CD_composition : IBanking
     {
         private Account account = new Account();
-        // private Account account = null;
+     
 
         public DateTime DepositDate { get; private set; } = DateTime.Now;
         public DateTime WithdrawDate { get; set; }
@@ -21,7 +21,17 @@ namespace Banking
             }
             return account.Withdrawal(account.Balance);
         }
-           
+
+        public decimal GetBalance()
+        {
+            return account.Balance;
+        }
+
+        public string GetAccountNumber()
+        {
+            return account.AccountNumber;
+        }
+
         public CD_composition(decimal Amount, int Months)
         {
             var success = account.Deposit(Amount);
