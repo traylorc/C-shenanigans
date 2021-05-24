@@ -1,0 +1,13 @@
+C:\repos\C# shenanigans\ExceptionLessonSolution\ExceptionLesson\bin\Debug\netcoreapp3.1\ExceptionLesson.exe
+C:\repos\C# shenanigans\ExceptionLessonSolution\ExceptionLesson\bin\Debug\netcoreapp3.1\ExceptionLesson.deps.json
+C:\repos\C# shenanigans\ExceptionLessonSolution\ExceptionLesson\bin\Debug\netcoreapp3.1\ExceptionLesson.runtimeconfig.json
+C:\repos\C# shenanigans\ExceptionLessonSolution\ExceptionLesson\bin\Debug\netcoreapp3.1\ExceptionLesson.runtimeconfig.dev.json
+C:\repos\C# shenanigans\ExceptionLessonSolution\ExceptionLesson\bin\Debug\netcoreapp3.1\ExceptionLesson.dll
+C:\repos\C# shenanigans\ExceptionLessonSolution\ExceptionLesson\bin\Debug\netcoreapp3.1\ExceptionLesson.pdb
+C:\repos\C# shenanigans\ExceptionLessonSolution\ExceptionLesson\obj\Debug\netcoreapp3.1\ExceptionLesson.csprojAssemblyReference.cache
+C:\repos\C# shenanigans\ExceptionLessonSolution\ExceptionLesson\obj\Debug\netcoreapp3.1\ExceptionLesson.AssemblyInfoInputs.cache
+C:\repos\C# shenanigans\ExceptionLessonSolution\ExceptionLesson\obj\Debug\netcoreapp3.1\ExceptionLesson.AssemblyInfo.cs
+C:\repos\C# shenanigans\ExceptionLessonSolution\ExceptionLesson\obj\Debug\netcoreapp3.1\ExceptionLesson.csproj.CoreCompileInputs.cache
+C:\repos\C# shenanigans\ExceptionLessonSolution\ExceptionLesson\obj\Debug\netcoreapp3.1\ExceptionLesson.dll
+C:\repos\C# shenanigans\ExceptionLessonSolution\ExceptionLesson\obj\Debug\netcoreapp3.1\ExceptionLesson.pdb
+C:\repos\C# shenanigans\ExceptionLessonSolution\ExceptionLesson\obj\Debug\netcoreapp3.1\ExceptionLesson.genruntimeconfig.cache
