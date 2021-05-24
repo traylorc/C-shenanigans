@@ -16,7 +16,7 @@ namespace InterfaceLesson
 
             foreach(var dog in dogs)
             {
-                dog.Print();
+                dog.Print(); 
             }
 
 
