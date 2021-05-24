@@ -1,0 +1,13 @@
+C:\repos\C# shenanigans\GenericCollectionsLessonSolution\GenericCollectionsLesson\bin\Debug\netcoreapp3.1\GenericCollectionsLesson.exe
+C:\repos\C# shenanigans\GenericCollectionsLessonSolution\GenericCollectionsLesson\bin\Debug\netcoreapp3.1\GenericCollectionsLesson.deps.json
+C:\repos\C# shenanigans\GenericCollectionsLessonSolution\GenericCollectionsLesson\bin\Debug\netcoreapp3.1\GenericCollectionsLesson.runtimeconfig.json
+C:\repos\C# shenanigans\GenericCollectionsLessonSolution\GenericCollectionsLesson\bin\Debug\netcoreapp3.1\GenericCollectionsLesson.runtimeconfig.dev.json
+C:\repos\C# shenanigans\GenericCollectionsLessonSolution\GenericCollectionsLesson\bin\Debug\netcoreapp3.1\GenericCollectionsLesson.dll
+C:\repos\C# shenanigans\GenericCollectionsLessonSolution\GenericCollectionsLesson\bin\Debug\netcoreapp3.1\GenericCollectionsLesson.pdb
+C:\repos\C# shenanigans\GenericCollectionsLessonSolution\GenericCollectionsLesson\obj\Debug\netcoreapp3.1\GenericCollectionsLesson.csprojAssemblyReference.cache
+C:\repos\C# shenanigans\GenericCollectionsLessonSolution\GenericCollectionsLesson\obj\Debug\netcoreapp3.1\GenericCollectionsLesson.AssemblyInfoInputs.cache
+C:\repos\C# shenanigans\GenericCollectionsLessonSolution\GenericCollectionsLesson\obj\Debug\netcoreapp3.1\GenericCollectionsLesson.AssemblyInfo.cs
+C:\repos\C# shenanigans\GenericCollectionsLessonSolution\GenericCollectionsLesson\obj\Debug\netcoreapp3.1\GenericCollectionsLesson.csproj.CoreCompileInputs.cache
+C:\repos\C# shenanigans\GenericCollectionsLessonSolution\GenericCollectionsLesson\obj\Debug\netcoreapp3.1\GenericCollectionsLesson.dll
+C:\repos\C# shenanigans\GenericCollectionsLessonSolution\GenericCollectionsLesson\obj\Debug\netcoreapp3.1\GenericCollectionsLesson.pdb
+C:\repos\C# shenanigans\GenericCollectionsLessonSolution\GenericCollectionsLesson\obj\Debug\netcoreapp3.1\GenericCollectionsLesson.genruntimeconfig.cache
