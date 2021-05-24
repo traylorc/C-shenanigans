@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Banking.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -16,8 +17,7 @@ namespace Banking
         {
             if(amount <= 0)
             {
-                Console.WriteLine($"the amount must be greater than zero");
-                return false;
+                throw new InvalidParameterException(amount);
             }                    
             Balance = Balance + amount;
             return true;
@@ -27,13 +27,11 @@ namespace Banking
         {
             if (amount <= 0)
             {
-                Console.WriteLine($"the amount must be greater than zero");
-                return false;
+               throw new InvalidParameterException(amount);                
             }
             if(amount > Balance)
             {
-                Console.WriteLine($"Insufficient Funds");
-                return false;
+                throw new InsufficientFundsException(amount, Balance);
             }
             Balance = Balance - amount;
             return true;
