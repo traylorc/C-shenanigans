@@ -1,0 +1,13 @@
+C:\repos\C# shenanigans\InterfaceLessonSolution\InterfaceLesson\obj\Debug\netcoreapp3.1\InterfaceLesson.csprojAssemblyReference.cache
+C:\repos\C# shenanigans\InterfaceLessonSolution\InterfaceLesson\obj\Debug\netcoreapp3.1\InterfaceLesson.AssemblyInfoInputs.cache
+C:\repos\C# shenanigans\InterfaceLessonSolution\InterfaceLesson\obj\Debug\netcoreapp3.1\InterfaceLesson.AssemblyInfo.cs
+C:\repos\C# shenanigans\InterfaceLessonSolution\InterfaceLesson\obj\Debug\netcoreapp3.1\InterfaceLesson.csproj.CoreCompileInputs.cache
+C:\repos\C# shenanigans\InterfaceLessonSolution\InterfaceLesson\bin\Debug\netcoreapp3.1\InterfaceLesson.exe
+C:\repos\C# shenanigans\InterfaceLessonSolution\InterfaceLesson\bin\Debug\netcoreapp3.1\InterfaceLesson.deps.json
+C:\repos\C# shenanigans\InterfaceLessonSolution\InterfaceLesson\bin\Debug\netcoreapp3.1\InterfaceLesson.runtimeconfig.json
+C:\repos\C# shenanigans\InterfaceLessonSolution\InterfaceLesson\bin\Debug\netcoreapp3.1\InterfaceLesson.runtimeconfig.dev.json
+C:\repos\C# shenanigans\InterfaceLessonSolution\InterfaceLesson\bin\Debug\netcoreapp3.1\InterfaceLesson.dll
+C:\repos\C# shenanigans\InterfaceLessonSolution\InterfaceLesson\bin\Debug\netcoreapp3.1\InterfaceLesson.pdb
+C:\repos\C# shenanigans\InterfaceLessonSolution\InterfaceLesson\obj\Debug\netcoreapp3.1\InterfaceLesson.dll
+C:\repos\C# shenanigans\InterfaceLessonSolution\InterfaceLesson\obj\Debug\netcoreapp3.1\InterfaceLesson.pdb
+C:\repos\C# shenanigans\InterfaceLessonSolution\InterfaceLesson\obj\Debug\netcoreapp3.1\InterfaceLesson.genruntimeconfig.cache
