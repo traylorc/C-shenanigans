@@ -10,7 +10,7 @@ namespace GenericCollectionsLesson
             Random rnd = new Random();
             var ints = new List<int>();
 
-            for(var idx = 0; idx <10; idx++)
+            for(var idx = 0; idx <30; idx++)
             {
                 var score = rnd.Next(0, 31);
                 ints.Add(score);
