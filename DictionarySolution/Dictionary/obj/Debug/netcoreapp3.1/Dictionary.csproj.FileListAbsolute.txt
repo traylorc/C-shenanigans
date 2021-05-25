@@ -1,0 +1,13 @@
+C:\repos\C# shenanigans\DictionarySolution\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.exe
+C:\repos\C# shenanigans\DictionarySolution\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.deps.json
+C:\repos\C# shenanigans\DictionarySolution\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.runtimeconfig.json
+C:\repos\C# shenanigans\DictionarySolution\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.runtimeconfig.dev.json
+C:\repos\C# shenanigans\DictionarySolution\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.dll
+C:\repos\C# shenanigans\DictionarySolution\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.pdb
+C:\repos\C# shenanigans\DictionarySolution\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.csprojAssemblyReference.cache
+C:\repos\C# shenanigans\DictionarySolution\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.AssemblyInfoInputs.cache
+C:\repos\C# shenanigans\DictionarySolution\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.AssemblyInfo.cs
+C:\repos\C# shenanigans\DictionarySolution\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.csproj.CoreCompileInputs.cache
+C:\repos\C# shenanigans\DictionarySolution\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.dll
+C:\repos\C# shenanigans\DictionarySolution\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.pdb
+C:\repos\C# shenanigans\DictionarySolution\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.genruntimeconfig.cache
