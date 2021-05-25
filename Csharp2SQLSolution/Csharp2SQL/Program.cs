@@ -15,7 +15,7 @@ namespace Csharp2SQL
 
 
             var users = sqllib.GetAllUsers();
-
+            var user = sqllib.GetByPK(1);
 
 
 

@@ -9,6 +9,37 @@ namespace Csharp2SQLLibrary
         //set property for connection
         public SqlConnection sqlconn { get; set; }
 
+        public User GetByPK(int id)
+        {
+            var sql = $"SELECT * from users where id ={id};";
+            var sqlcmd = new SqlCommand(sql, sqlconn);
+            var sqldatareader = sqlcmd.ExecuteReader();
+            
+            if(!sqldatareader.HasRows)
+            {
+                sqldatareader.Close();
+                return null;
+            }
+            sqldatareader.Read();
+            var user = new User()
+            {
+                Id = Convert.ToInt32(sqldatareader["Id"]),
+                Password = Convert.ToString(sqldatareader["Password"]),
+                Firstname = Convert.ToString(sqldatareader["Firstname"]),
+                Lastname= Convert.ToString(sqldatareader["Lastname"]),
+                Phone = Convert.ToString(sqldatareader["Phone"]),
+                Email = Convert.ToString(sqldatareader["Email"]),
+                IsReviewer = Convert.ToBoolean(sqldatareader["IsReviewer"]),
+                IsAdmin = Convert.ToBoolean(sqldatareader["IsAdmin"])
+
+            };
+            sqldatareader.Close();
+            return user;
+        }
+
+
+
+
         //return a collection of user instances
         public List<User> GetAllUsers()
         {
@@ -44,6 +75,7 @@ namespace Csharp2SQLLibrary
                 };
                 users.Add(user);
             }
+            sqldatareader.Close();
             return users;
         }
 
