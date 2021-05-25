@@ -1,0 +1,16 @@
+C:\repos\C# shenanigans\LobraryLessonSolution\LibraryTest\bin\Debug\netcoreapp3.1\LibraryTest.exe
+C:\repos\C# shenanigans\LobraryLessonSolution\LibraryTest\bin\Debug\netcoreapp3.1\LibraryTest.deps.json
+C:\repos\C# shenanigans\LobraryLessonSolution\LibraryTest\bin\Debug\netcoreapp3.1\LibraryTest.runtimeconfig.json
+C:\repos\C# shenanigans\LobraryLessonSolution\LibraryTest\bin\Debug\netcoreapp3.1\LibraryTest.runtimeconfig.dev.json
+C:\repos\C# shenanigans\LobraryLessonSolution\LibraryTest\bin\Debug\netcoreapp3.1\LibraryTest.dll
+C:\repos\C# shenanigans\LobraryLessonSolution\LibraryTest\bin\Debug\netcoreapp3.1\LibraryTest.pdb
+C:\repos\C# shenanigans\LobraryLessonSolution\LibraryTest\bin\Debug\netcoreapp3.1\Librarylesson.dll
+C:\repos\C# shenanigans\LobraryLessonSolution\LibraryTest\bin\Debug\netcoreapp3.1\Librarylesson.pdb
+C:\repos\C# shenanigans\LobraryLessonSolution\LibraryTest\obj\Debug\netcoreapp3.1\LibraryTest.csprojAssemblyReference.cache
+C:\repos\C# shenanigans\LobraryLessonSolution\LibraryTest\obj\Debug\netcoreapp3.1\LibraryTest.AssemblyInfoInputs.cache
+C:\repos\C# shenanigans\LobraryLessonSolution\LibraryTest\obj\Debug\netcoreapp3.1\LibraryTest.AssemblyInfo.cs
+C:\repos\C# shenanigans\LobraryLessonSolution\LibraryTest\obj\Debug\netcoreapp3.1\LibraryTest.csproj.CoreCompileInputs.cache
+C:\repos\C# shenanigans\LobraryLessonSolution\LibraryTest\obj\Debug\netcoreapp3.1\LibraryTest.csproj.CopyComplete
+C:\repos\C# shenanigans\LobraryLessonSolution\LibraryTest\obj\Debug\netcoreapp3.1\LibraryTest.dll
+C:\repos\C# shenanigans\LobraryLessonSolution\LibraryTest\obj\Debug\netcoreapp3.1\LibraryTest.pdb
+C:\repos\C# shenanigans\LobraryLessonSolution\LibraryTest\obj\Debug\netcoreapp3.1\LibraryTest.genruntimeconfig.cache

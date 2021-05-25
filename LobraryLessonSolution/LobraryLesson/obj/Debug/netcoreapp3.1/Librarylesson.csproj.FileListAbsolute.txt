@@ -1,0 +1,9 @@
+C:\repos\C# shenanigans\LobraryLessonSolution\LobraryLesson\bin\Debug\netcoreapp3.1\Librarylesson.deps.json
+C:\repos\C# shenanigans\LobraryLessonSolution\LobraryLesson\bin\Debug\netcoreapp3.1\Librarylesson.dll
+C:\repos\C# shenanigans\LobraryLessonSolution\LobraryLesson\bin\Debug\netcoreapp3.1\Librarylesson.pdb
+C:\repos\C# shenanigans\LobraryLessonSolution\LobraryLesson\obj\Debug\netcoreapp3.1\Librarylesson.csprojAssemblyReference.cache
+C:\repos\C# shenanigans\LobraryLessonSolution\LobraryLesson\obj\Debug\netcoreapp3.1\Librarylesson.AssemblyInfoInputs.cache
+C:\repos\C# shenanigans\LobraryLessonSolution\LobraryLesson\obj\Debug\netcoreapp3.1\Librarylesson.AssemblyInfo.cs
+C:\repos\C# shenanigans\LobraryLessonSolution\LobraryLesson\obj\Debug\netcoreapp3.1\Librarylesson.csproj.CoreCompileInputs.cache
+C:\repos\C# shenanigans\LobraryLessonSolution\LobraryLesson\obj\Debug\netcoreapp3.1\Librarylesson.dll
+C:\repos\C# shenanigans\LobraryLessonSolution\LobraryLesson\obj\Debug\netcoreapp3.1\Librarylesson.pdb
