@@ -9,6 +9,70 @@ namespace Csharp2SQLLibrary
         //set property for connection
         public SqlConnection sqlconn { get; set; }
 
+        public List<Vendors> GetAllVendors()
+        {
+            //add in SQL Statement
+            var sql = "SELECT * From Vendors;";
+            //set new instance of SqlCommand
+            var sqlcmd = new SqlCommand(sql, sqlconn);
+            //reader brings back results so you can read them
+            var sqldatareader = sqlcmd.ExecuteReader();
+
+            var vndrs = new List<Vendors>();
+
+            while (sqldatareader.Read())
+            {
+                var id = Convert.ToInt32(sqldatareader["Id"]);
+                var code = Convert.ToString(sqldatareader["Code"]);
+                var name = sqldatareader["Name"].ToString();
+                var address = sqldatareader["Address"].ToString();
+                var city = sqldatareader["City"].ToString();
+                var state = sqldatareader["State"].ToString();
+                var zip = sqldatareader["Zip"].ToString();
+                var phone = (sqldatareader["Phone"]).ToString();
+                var email =(sqldatareader["Email"]).ToString();
+
+
+
+                var vndr = new Vendors()
+                {
+                    Id = id,
+                    Code = code,
+                    Name = name,
+                    Address = address,
+                    City = city,
+                    State = state,
+                    Zip = zip,
+                    Phone = phone,
+                    Email = email
+                };
+                vndrs.Add(vndr);
+
+            }
+            sqldatareader.Close();
+            return vndrs;
+
+
+
+
+        }
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         public User GetByPK(int id)
         {
             var sql = $"SELECT * from users where id ={id};";

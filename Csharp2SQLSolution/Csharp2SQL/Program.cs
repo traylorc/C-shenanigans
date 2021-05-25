@@ -7,7 +7,9 @@ namespace Csharp2SQL
     {
         static void Main(string[] args)
         {
-            //create var name and call to method
+
+
+             //create var name and call to method
             var sqllib = new SQLLib();
             sqllib.Connect();
 
@@ -16,7 +18,7 @@ namespace Csharp2SQL
 
             var users = sqllib.GetAllUsers();
             var user = sqllib.GetByPK(1);
-
+            var vndrs = sqllib.GetAllVendors();
 
 
 

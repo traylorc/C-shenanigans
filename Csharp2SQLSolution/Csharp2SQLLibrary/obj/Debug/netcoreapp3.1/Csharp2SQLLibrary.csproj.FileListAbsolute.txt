@@ -6,3 +6,4 @@ C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQLLibrary\obj\Debug\netcoreap
 C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQLLibrary\obj\Debug\netcoreapp3.1\Csharp2SQLLibrary.csproj.CoreCompileInputs.cache
 C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQLLibrary\obj\Debug\netcoreapp3.1\Csharp2SQLLibrary.dll
 C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQLLibrary\obj\Debug\netcoreapp3.1\Csharp2SQLLibrary.pdb
+C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQLLibrary\obj\Debug\netcoreapp3.1\Csharp2SQLLibrary.csprojAssemblyReference.cache
