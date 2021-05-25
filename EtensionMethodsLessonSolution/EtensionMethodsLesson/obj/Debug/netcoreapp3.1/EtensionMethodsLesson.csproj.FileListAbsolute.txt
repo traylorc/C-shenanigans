@@ -1,0 +1,13 @@
+C:\repos\C# shenanigans\EtensionMethodsLessonSolution\EtensionMethodsLesson\bin\Debug\netcoreapp3.1\EtensionMethodsLesson.exe
+C:\repos\C# shenanigans\EtensionMethodsLessonSolution\EtensionMethodsLesson\bin\Debug\netcoreapp3.1\EtensionMethodsLesson.deps.json
+C:\repos\C# shenanigans\EtensionMethodsLessonSolution\EtensionMethodsLesson\bin\Debug\netcoreapp3.1\EtensionMethodsLesson.runtimeconfig.json
+C:\repos\C# shenanigans\EtensionMethodsLessonSolution\EtensionMethodsLesson\bin\Debug\netcoreapp3.1\EtensionMethodsLesson.runtimeconfig.dev.json
+C:\repos\C# shenanigans\EtensionMethodsLessonSolution\EtensionMethodsLesson\bin\Debug\netcoreapp3.1\EtensionMethodsLesson.dll
+C:\repos\C# shenanigans\EtensionMethodsLessonSolution\EtensionMethodsLesson\bin\Debug\netcoreapp3.1\EtensionMethodsLesson.pdb
+C:\repos\C# shenanigans\EtensionMethodsLessonSolution\EtensionMethodsLesson\obj\Debug\netcoreapp3.1\EtensionMethodsLesson.csprojAssemblyReference.cache
+C:\repos\C# shenanigans\EtensionMethodsLessonSolution\EtensionMethodsLesson\obj\Debug\netcoreapp3.1\EtensionMethodsLesson.AssemblyInfoInputs.cache
+C:\repos\C# shenanigans\EtensionMethodsLessonSolution\EtensionMethodsLesson\obj\Debug\netcoreapp3.1\EtensionMethodsLesson.AssemblyInfo.cs
+C:\repos\C# shenanigans\EtensionMethodsLessonSolution\EtensionMethodsLesson\obj\Debug\netcoreapp3.1\EtensionMethodsLesson.csproj.CoreCompileInputs.cache
+C:\repos\C# shenanigans\EtensionMethodsLessonSolution\EtensionMethodsLesson\obj\Debug\netcoreapp3.1\EtensionMethodsLesson.dll
+C:\repos\C# shenanigans\EtensionMethodsLessonSolution\EtensionMethodsLesson\obj\Debug\netcoreapp3.1\EtensionMethodsLesson.pdb
+C:\repos\C# shenanigans\EtensionMethodsLessonSolution\EtensionMethodsLesson\obj\Debug\netcoreapp3.1\EtensionMethodsLesson.genruntimeconfig.cache
