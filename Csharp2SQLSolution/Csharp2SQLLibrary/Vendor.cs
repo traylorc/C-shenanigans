@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Csharp2SQLLibrary
 {
-    public class Vendors
+    public class Vendor
     {
         public int Id { get; set; }
         public string Code { get; set; }

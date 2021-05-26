@@ -94,7 +94,7 @@ namespace Csharp2SQLLibrary
         }
 
 
-        public List<Vendors> GetAllVendors()
+        public List<Vendor> GetAllVendors()
         {
             //add in SQL Statement
             var sql = "SELECT * From Vendors;";
@@ -103,7 +103,7 @@ namespace Csharp2SQLLibrary
             //reader brings back results so you can read them
             var sqldatareader = sqlcmd.ExecuteReader();
 
-            var vndrs = new List<Vendors>();
+            var vndrs = new List<Vendor>();
 
             while (sqldatareader.Read())
             {
@@ -119,7 +119,7 @@ namespace Csharp2SQLLibrary
 
 
 
-                var vndr = new Vendors()
+                var vndr = new Vendor()
                 {
                     Id = id,
                     Code = code,

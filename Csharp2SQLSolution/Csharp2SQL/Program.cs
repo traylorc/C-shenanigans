@@ -7,9 +7,56 @@ namespace Csharp2SQL
     {
         static void Main(string[] args)
         {
+
+            var sqlconn = new Connection("localhost\\sqlexpress", "PrsDb");
+            //stuff sql connection into VendorsController and stuff that into vendorsController
+            var vendorsController = new VendorsController(sqlconn);
+            var vendors = vendorsController.GetAll();
+            var vendorId = vendorsController.GetByPk(1);
+
+            //create new vendor
+            var newVendor = new Vendor()
+            {
+                Id = 0,
+                Code = "TQL",
+                Name = "Total Quality",
+                Address = "123 old way",
+                City = "Cincinnati",
+                State = "OH",
+                Zip = "45215",
+                Phone = "4445544332",
+                Email = "tql@tql.com"
+            };
+            //var success = vendorsController.Create(newVendor);
+
+            //change vendor parameters
+            var vendor = vendorsController.GetByPk(5);
+            vendor.Email = "TQL1@tql.com";
+            /*var success = vendorsController.Change(vendor)*/;
+
+            //delete vendor
+            var vendor1 = vendorsController.GetByPk(5);
+            //var success = vendorsController.Remove(vendor1);
+
+
+
+
+
+
+
+
+            sqlconn.Disconnect();
+
+
+
+
+
+
+
+
              //create var name and stuff in desired class/project and call to method using new var//
-            var sqllib = new SQLLib();
-            sqllib.Connect();
+            //var sqllib = new SQLLib();
+            //sqllib.Connect();
 
 
             //var user = sqllib.GetByPK(6);
@@ -41,7 +88,7 @@ namespace Csharp2SQL
 
 
 
-            sqllib.Disconnect();
+            //sqllib.Disconnect();
         }
     }
 }

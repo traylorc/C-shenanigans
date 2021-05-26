@@ -33,7 +33,6 @@ C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQL\bin\Debug\netcoreapp3.1\ru
 C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQL\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQL\bin\Debug\netcoreapp3.1\Csharp2SQLLibrary.dll
 C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQL\bin\Debug\netcoreapp3.1\Csharp2SQLLibrary.pdb
-C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQL\obj\Debug\netcoreapp3.1\Csharp2SQL.csprojAssemblyReference.cache
 C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQL\obj\Debug\netcoreapp3.1\Csharp2SQL.AssemblyInfoInputs.cache
 C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQL\obj\Debug\netcoreapp3.1\Csharp2SQL.AssemblyInfo.cs
 C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQL\obj\Debug\netcoreapp3.1\Csharp2SQL.csproj.CoreCompileInputs.cache
@@ -41,3 +40,4 @@ C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQL\obj\Debug\netcoreapp3.1\Cs
 C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQL\obj\Debug\netcoreapp3.1\Csharp2SQL.dll
 C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQL\obj\Debug\netcoreapp3.1\Csharp2SQL.pdb
 C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQL\obj\Debug\netcoreapp3.1\Csharp2SQL.genruntimeconfig.cache
+C:\repos\C# shenanigans\Csharp2SQLSolution\Csharp2SQL\obj\Debug\netcoreapp3.1\Csharp2SQL.csproj.AssemblyReference.cache
