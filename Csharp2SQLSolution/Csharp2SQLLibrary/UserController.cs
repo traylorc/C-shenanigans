@@ -68,6 +68,53 @@ namespace Csharp2SQLLibrary
 
         }
         
-        private bool FillUsersFromSqlRow(SqlDataReader reader)
+        private User FillUsersFromSqlRow(SqlDataReader reader)
+        {
+            var user = new User()
+            {
+                Id = Convert.ToInt32(reader["Id"]),
+                Username = Convert.ToString(reader["Username"]),
+                Password = Convert.ToString(reader["Password"]),
+                Firstname = Convert.ToString(reader["Firstname"]),
+                Lastname = Convert.ToString(reader["Lastname"]),
+                Phone = Convert.ToString(reader["Phone"]),
+                Email = Convert.ToString(reader["Email"]),
+                IsReviewer = Convert.ToBoolean(reader["IsReviewer"]),
+                IsAdmin = Convert.ToBoolean(reader["IsAdmin"])
+            };
+            return user;
+        }
+
+        public List<User> GetAllUsers()
+        {
+            var sql = $" SELECT * from Users; ";
+            var cmd = new SqlCommand(sql, connection.SqlConn);
+            var reader = cmd.ExecuteReader();
+            var users = new List<User>();
+
+            while (reader.Read())
+            {
+                var user = FillUsersFromSqlRow(reader);
+                users.Add(user);
+            }
+            reader.Close();
+            return users;
+        }
+
+        public User GetByPk(int id)
+        {
+            var sql = $"SELECT * From Users where id = {id};";
+            var cmd = new SqlCommand(sql, connection.SqlConn);
+            var reader = cmd.ExecuteReader();
+            if (!reader.HasRows)
+            {
+                reader.Close();
+                return null;
+            }
+            reader.Read();
+            var vendor = FillUsersFromSqlRow(reader);
+            reader.Close();
+            return vendor;
+        }
     }
 }
