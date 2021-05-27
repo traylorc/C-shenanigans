@@ -126,7 +126,7 @@ namespace Csharp2SQLLibrary
 
             var cmd = new SqlCommand(sql, connection.SqlConn);
 
-            FillCmdParFromSqlRow(cmd, vendor);
+            FillCmdParFromSqlRowForVendors(cmd, vendor);
 
             cmd.Parameters.AddWithValue("@id", vendor.Id);
 

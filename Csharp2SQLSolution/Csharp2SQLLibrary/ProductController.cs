@@ -15,14 +15,8 @@ namespace Csharp2SQLLibrary
         }
 
 
-        public bool Create(Product product, string VendorCode)
-        {
-            var vendCtrl = new VendorsController(connection);
-            var vendor = vendCtrl.GetByCode(VendorCode);
-            product.VendorId = vendor.Id;
-            return Create(product);
-        }
-
+       
+        
         private void FillCmdParFromSqlRowsForProducts(SqlCommand cmd, Product product)
         {
             cmd.Parameters.AddWithValue("@partnbr", product.PartNbr);
@@ -31,6 +25,14 @@ namespace Csharp2SQLLibrary
             cmd.Parameters.AddWithValue("@unit", product.Unit);
             cmd.Parameters.AddWithValue("@photopath", (object)product.PhotoPath ?? DBNull.Value);
             cmd.Parameters.AddWithValue("@vendorid", product.VendorId);
+        }
+       
+        public bool Create(Product product, string VendorCode)
+        {
+            var vendCtrl = new VendorsController(connection);
+            var vendor = vendCtrl.GetByCode(VendorCode);
+            product.VendorId = vendor.Id;
+            return Create(product);
         }
 
 
@@ -47,18 +49,43 @@ namespace Csharp2SQLLibrary
             return (rowsaffected == 1);
         }
 
-        private void GetVendorForProducts(List<Product> products)
+        public bool Change(Product product)
         {
-            foreach(var product in products)
-            {
-                GetVendorForProduct(product);
-            }
+            var sql = " INSERT into Products" +
+              " (PartNbr, Name, Price, Unit, PhotoPath, VendorId) " +
+              " VALUES (@partnbr, @name, @price, @unit, @photopath, @vendorid); ";
+            var cmd = new SqlCommand(sql, connection.SqlConn);
+
+            FillCmdParFromSqlRowsForProducts(cmd, product);
+
+            var rowsaffected = cmd.ExecuteNonQuery();
+            return (rowsaffected == 1);
+        }
+
+        public bool Remove(Product product)
+        {
+            var sql = $" DELETE From Products " +
+                       " Where Id = @id; ";
+
+            var cmd = new SqlCommand(sql, connection.SqlConn);
+            cmd.Parameters.AddWithValue("@id", product.Id);
+            var rowsaffected = cmd.ExecuteNonQuery();
+
+            return (rowsaffected == 1);
         }
 
         private void GetVendorForProduct(Product product)
         {
             var vendCtrl = new VendorsController(connection);
             product.vendor = vendCtrl.GetByPk(product.VendorId);
+        }
+
+        private void GetVendorForProducts(List<Product> products)
+        {
+            foreach(var product in products)
+            {
+                GetVendorForProduct(product);
+            }
         }
 
         private Product FillProductFromSqlRow(SqlDataReader reader)
@@ -91,6 +118,22 @@ namespace Csharp2SQLLibrary
             }
             reader.Close();
             return products;
+        }
+
+        public Product GetByPk(int id)
+        {
+            var sql = $"SELECT * From Products where id = {id};";
+            var cmd = new SqlCommand(sql, connection.SqlConn);
+            var reader = cmd.ExecuteReader();
+            if (!reader.HasRows)
+            {
+                reader.Close();
+                return null;
+            }
+            reader.Read();
+            var vendor = FillProductFromSqlRow(reader);
+            reader.Close();
+            return vendor;
         }
     }
 }

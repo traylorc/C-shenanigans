@@ -24,12 +24,15 @@ namespace Csharp2SQL
             var productsController = new ProductController(sqlconn);
            // var success = productsController.Create(newProduct, "AMZ");
 
+            var product1 = productsController.GetByPk(4);
+            //var success = productsController.Remove(product1);
 
             var products = productsController.GetAllProducts();
 
 
-
-
+           
+            
+            
             //stuff sql connection into VendorsController and stuff that into vendorsController
             var vendorsController = new VendorsController(sqlconn);
             var vendors = vendorsController.GetAll();
@@ -81,7 +84,7 @@ namespace Csharp2SQL
             //sqllib.Connect();
 
 
-            //var user = sqllib.GetByPK(6);
+           // var user = sqllib.GetByPK(6);
             //var success = sqllib.Remove(user);
 
 
