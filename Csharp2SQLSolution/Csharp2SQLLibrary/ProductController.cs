@@ -23,6 +23,16 @@ namespace Csharp2SQLLibrary
             return Create(product);
         }
 
+        private void FillCmdParFromSqlRowsForProducts(SqlCommand cmd, Product product)
+        {
+            cmd.Parameters.AddWithValue("@partnbr", product.PartNbr);
+            cmd.Parameters.AddWithValue("@name", product.Name);
+            cmd.Parameters.AddWithValue("@price", product.Price);
+            cmd.Parameters.AddWithValue("@unit", product.Unit);
+            cmd.Parameters.AddWithValue("@photopath", (object)product.PhotoPath ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@vendorid", product.VendorId);
+        }
+
 
         public bool Create(Product product)
         {
@@ -30,12 +40,8 @@ namespace Csharp2SQLLibrary
                 " (PartNbr, Name, Price, Unit, PhotoPath, VendorId) " +
                 " VALUES (@partnbr, @name, @price, @unit, @photopath, @vendorid); ";
             var cmd = new SqlCommand(sql, connection.SqlConn);
-            cmd.Parameters.AddWithValue("@partnbr", product.PartNbr);
-            cmd.Parameters.AddWithValue("@name", product.Name);
-            cmd.Parameters.AddWithValue("@price", product.Price);
-            cmd.Parameters.AddWithValue("@unit", product.Unit);
-            cmd.Parameters.AddWithValue("@photopath", (object)product.PhotoPath ?? DBNull.Value);
-            cmd.Parameters.AddWithValue("@vendorid", product.VendorId);
+
+            FillCmdParFromSqlRowsForProducts(cmd, product);
 
             var rowsaffected = cmd.ExecuteNonQuery();
             return (rowsaffected == 1);
@@ -48,6 +54,7 @@ namespace Csharp2SQLLibrary
                 GetVendorForProduct(product);
             }
         }
+
         private void GetVendorForProduct(Product product)
         {
             var vendCtrl = new VendorsController(connection);

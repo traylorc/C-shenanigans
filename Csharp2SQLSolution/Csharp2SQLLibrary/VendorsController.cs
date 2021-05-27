@@ -89,6 +89,21 @@ namespace Csharp2SQLLibrary
             
         }
 
+        private void FillCmdParFromSqlRowForVendors(SqlCommand cmd, Vendor vendor)
+        {
+          
+
+            cmd.Parameters.AddWithValue("@code", vendor.Code);
+            cmd.Parameters.AddWithValue("@name", vendor.Name);
+            cmd.Parameters.AddWithValue("@address", vendor.Address);
+            cmd.Parameters.AddWithValue("@city", vendor.City);
+            cmd.Parameters.AddWithValue("@state", vendor.State);
+            cmd.Parameters.AddWithValue("@zip", vendor.Zip);
+            cmd.Parameters.AddWithValue("@phone", vendor.Phone);
+            cmd.Parameters.AddWithValue("@email", vendor.Email);
+
+        }
+
         public bool Create(Vendor vendor)
         {
             var sql = $"INSERT into Vendors" +
@@ -97,14 +112,7 @@ namespace Csharp2SQLLibrary
                 $" (@code, @name, @address, @city, @state, @zip, @phone, @email); ";
             var cmd = new SqlCommand(sql, connection.SqlConn);
 
-            cmd.Parameters.AddWithValue("@code", vendor.Code);
-            cmd.Parameters.AddWithValue("@name", vendor.Name);
-            cmd.Parameters.AddWithValue("@address", vendor.Address);
-            cmd.Parameters.AddWithValue("@city", vendor.City);
-            cmd.Parameters.AddWithValue("@state", vendor.State);
-            cmd.Parameters.AddWithValue("@zip", vendor.Zip);
-            cmd.Parameters.AddWithValue("@phone", vendor.Phone);
-            cmd.Parameters.AddWithValue("@email", vendor.Email);
+            FillCmdParFromSqlRowForVendors(cmd, vendor);
 
             var rowsaffected = cmd.ExecuteNonQuery();
             return (rowsaffected == 1);
@@ -112,27 +120,14 @@ namespace Csharp2SQLLibrary
 
         public bool Change(Vendor vendor)
         {
-            var sql = $"UPDATE Vendors Set" +
-                " Code = @code, " +
-                " Name = @name, " +
-                " Address = @address, " +
-                " City = @city, " +
-                " State = @state, " +
-                " Zip = @zip, " +
-                " Phone = @phone, " +
-                " Email = @email " +
-                " Where Id = @id; ";
+            var sql = $"UPDATE Vendors Set" + " Code = @code, " + " Name = @name, " +
+                " Address = @address, " + " City = @city, " + " State = @state, " +
+                " Zip = @zip, " + " Phone = @phone, " + " Email = @email " + " Where Id = @id; ";
 
             var cmd = new SqlCommand(sql, connection.SqlConn);
 
-            cmd.Parameters.AddWithValue("@code", vendor.Code);
-            cmd.Parameters.AddWithValue("@name", vendor.Name);
-            cmd.Parameters.AddWithValue("@address", vendor.Address);
-            cmd.Parameters.AddWithValue("@city", vendor.City);
-            cmd.Parameters.AddWithValue("@state", vendor.State);
-            cmd.Parameters.AddWithValue("@zip", vendor.Zip);
-            cmd.Parameters.AddWithValue("@phone", vendor.Phone);
-            cmd.Parameters.AddWithValue("@email", vendor.Email);
+            FillCmdParFromSqlRow(cmd, vendor);
+
             cmd.Parameters.AddWithValue("@id", vendor.Id);
 
             var rowsaffected = cmd.ExecuteNonQuery();
