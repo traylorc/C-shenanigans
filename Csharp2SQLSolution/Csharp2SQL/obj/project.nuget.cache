@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tHIyLviEfIsHOhlxeIgmbfMu5qdEuvUjel7JeteaDB+x9sFGYfNw78sYHTlAKWedCMDQHb9cC770KZrtFnu/1Q==",
+  "dgSpecHash": "21NTE4wYI31yzJQQQZTKOH+F0NWBR5uTjd4ymQtDYW7B7kbMGra5aqm3ra2J7r2Ly4DXxR93Asu3QveuU0VOUQ==",
   "success": true,
-  "projectFilePath": "C:\\repos\\C# shenanigans\\Csharp2SQLSolution\\Csharp2SQL\\Csharp2SQL.csproj",
+  "projectFilePath": "C:\\repos\\C-shenanigans\\Csharp2SQLSolution\\Csharp2SQL\\Csharp2SQL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Charles.Traylor\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Charles.Traylor\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.3\\microsoft.data.sqlclient.2.1.3.nupkg.sha512",

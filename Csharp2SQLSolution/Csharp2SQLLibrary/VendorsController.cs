@@ -33,8 +33,7 @@ namespace Csharp2SQLLibrary
                 Email = Convert.ToString(reader["Email"])
             };
             return vendor;
-        }
-        
+        }        
         
         
         public Vendor GetByCode(string Code)

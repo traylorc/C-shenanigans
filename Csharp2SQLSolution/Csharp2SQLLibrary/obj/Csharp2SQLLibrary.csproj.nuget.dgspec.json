@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repos\\C# shenanigans\\Csharp2SQLSolution\\Csharp2SQLLibrary\\Csharp2SQLLibrary.csproj": {}
+    "C:\\repos\\C-shenanigans\\Csharp2SQLSolution\\Csharp2SQLLibrary\\Csharp2SQLLibrary.csproj": {}
   },
   "projects": {
-    "C:\\repos\\C# shenanigans\\Csharp2SQLSolution\\Csharp2SQLLibrary\\Csharp2SQLLibrary.csproj": {
+    "C:\\repos\\C-shenanigans\\Csharp2SQLSolution\\Csharp2SQLLibrary\\Csharp2SQLLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\C# shenanigans\\Csharp2SQLSolution\\Csharp2SQLLibrary\\Csharp2SQLLibrary.csproj",
+        "projectUniqueName": "C:\\repos\\C-shenanigans\\Csharp2SQLSolution\\Csharp2SQLLibrary\\Csharp2SQLLibrary.csproj",
         "projectName": "Csharp2SQLLibrary",
-        "projectPath": "C:\\repos\\C# shenanigans\\Csharp2SQLSolution\\Csharp2SQLLibrary\\Csharp2SQLLibrary.csproj",
+        "projectPath": "C:\\repos\\C-shenanigans\\Csharp2SQLSolution\\Csharp2SQLLibrary\\Csharp2SQLLibrary.csproj",
         "packagesPath": "C:\\Users\\Charles.Traylor\\.nuget\\packages\\",
-        "outputPath": "C:\\repos\\C# shenanigans\\Csharp2SQLSolution\\Csharp2SQLLibrary\\obj\\",
+        "outputPath": "C:\\repos\\C-shenanigans\\Csharp2SQLSolution\\Csharp2SQLLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Charles.Traylor\\AppData\\Roaming\\NuGet\\NuGet.Config",
