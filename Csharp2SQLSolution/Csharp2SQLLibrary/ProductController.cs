@@ -13,7 +13,7 @@ namespace Csharp2SQLLibrary
         {
             ProductController.connection = connection;
         }
-
+        
 
        
         
@@ -51,7 +51,7 @@ namespace Csharp2SQLLibrary
 
         public bool Change(Product product)
         {
-            var sql = " INSERT into Products" +
+            var sql = " Update Products set" +
               " (PartNbr, Name, Price, Unit, PhotoPath, VendorId) " +
               " VALUES (@partnbr, @name, @price, @unit, @photopath, @vendorid); ";
             var cmd = new SqlCommand(sql, connection.SqlConn);
@@ -131,9 +131,9 @@ namespace Csharp2SQLLibrary
                 return null;
             }
             reader.Read();
-            var vendor = FillProductFromSqlRow(reader);
+            var product = FillProductFromSqlRow(reader);
             reader.Close();
-            return vendor;
+            return product;
         }
     }
 }

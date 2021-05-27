@@ -14,7 +14,22 @@ namespace Csharp2SQLLibrary
             UserController.connection = connection;
         }
 
-
+        public User GetByUsername(string username)
+        {
+            var sql = "SELECT * from Users where Username = @username;";
+            var cmd = new SqlCommand(sql, connection.SqlConn);
+            cmd.Parameters.AddWithValue("@username", username);
+            var reader = cmd.ExecuteReader();
+            if(reader.HasRows)
+            {
+                reader.Close();
+                return null;
+            }
+            reader.Read();
+            var user = FillUsersFromSqlRow(reader);
+            reader.Close();
+            return user;
+        }
 
 
         private void FillCmdParFromSqlRowsForUsers(SqlCommand cmd, User user)
@@ -44,7 +59,7 @@ namespace Csharp2SQLLibrary
 
         public bool Change(User user)
         {
-            var sql = " INSERT into Users " +
+            var sql = " Update Users set " +
                 " (Username, Password, Firstname, Lastname, Phone, Email, IsReviewer, IsAdmin)" +
                 "VALUES (@username, @password, @firstname, @lastname, @phone, @email, @isReviewer, @isAdmin);";
             var cmd = new SqlCommand(sql, connection.SqlConn);
@@ -112,9 +127,9 @@ namespace Csharp2SQLLibrary
                 return null;
             }
             reader.Read();
-            var vendor = FillUsersFromSqlRow(reader);
+            var user = FillUsersFromSqlRow(reader);
             reader.Close();
-            return vendor;
+            return user;
         }
     }
 }
