@@ -9,10 +9,32 @@ namespace Csharp2SQL
         {
 
             var sqlconn = new Connection("localhost\\sqlexpress", "PrsDb");
+
+
+            var newProduct = new Product()
+            {
+                Id = 0,
+                PartNbr = "Ball",
+                Name = "Basket",
+                Price = 20,
+                Unit = "Each",
+                PhotoPath = null,
+                VendorId = 0
+            };
+            var productsController = new ProductController(sqlconn);
+           // var success = productsController.Create(newProduct, "AMZ");
+
+
+            var products = productsController.GetAllProducts();
+
+
+
+
             //stuff sql connection into VendorsController and stuff that into vendorsController
             var vendorsController = new VendorsController(sqlconn);
             var vendors = vendorsController.GetAll();
             var vendorId = vendorsController.GetByPk(1);
+            var vendorcode = vendorsController.GetByCode("AMZ");
 
             //create new vendor
             var newVendor = new Vendor()

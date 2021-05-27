@@ -13,5 +13,6 @@ namespace Csharp2SQLLibrary
         public decimal Price { get; set; }
         public string Unit { get; set; }
         public string PhotoPath { get; set; }
+        public Vendor vendor  { get; set; }
     }
 }

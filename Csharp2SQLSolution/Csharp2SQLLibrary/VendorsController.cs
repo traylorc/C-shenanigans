@@ -9,6 +9,51 @@ namespace Csharp2SQLLibrary
      {
         private static Connection connection { get; set; }
 
+        
+        //dependancy injection
+        public VendorsController(Connection connection)
+        {
+            //left side is parameter right side is property
+            VendorsController.connection = connection;
+        }       
+
+
+        private Vendor FillVendorFromSqlRow(SqlDataReader reader)
+        {
+            var vendor = new Vendor()
+            {
+                Id = Convert.ToInt32(reader["ID"]),
+                Code = Convert.ToString(reader["Code"]),
+                Name = Convert.ToString(reader["Name"]),
+                Address = Convert.ToString(reader["Address"]),
+                City = Convert.ToString(reader["City"]),
+                State = Convert.ToString(reader["State"]),
+                Zip = Convert.ToString(reader["Zip"]),
+                Phone = Convert.ToString(reader["Phone"]),
+                Email = Convert.ToString(reader["Email"])
+            };
+            return vendor;
+        }
+        
+        
+        
+        public Vendor GetByCode(string Code)
+        {
+            var sql = "SELECT * from Vendors Where Code = @code;";
+            var cmd = new SqlCommand(sql, connection.SqlConn);
+            cmd.Parameters.AddWithValue("@code", Code);
+            var reader = cmd.ExecuteReader();
+            if(!reader.HasRows)
+            {
+                reader.Close();
+                return null;
+            }
+            reader.Read();
+            var vendor = FillVendorFromSqlRow(reader);
+            reader.Close();
+            return vendor;
+        }
+
 
         public List<Vendor> GetAll()
         {
@@ -19,18 +64,7 @@ namespace Csharp2SQLLibrary
 
             while (reader.Read())
             {
-                var vendor = new Vendor()
-                {
-                    Id = Convert.ToInt32(reader["ID"]),
-                    Code = Convert.ToString(reader["Code"]),
-                    Name = Convert.ToString(reader["Name"]),
-                    Address = Convert.ToString(reader["Address"]),
-                    City = Convert.ToString(reader["City"]),
-                    State = Convert.ToString(reader["State"]),
-                    Zip = Convert.ToString(reader["Zip"]),
-                    Phone = Convert.ToString(reader["Phone"]),
-                    Email = Convert.ToString(reader["Email"])
-                };
+                var vendor = FillVendorFromSqlRow(reader);
                 vendors.Add(vendor);
             }
             reader.Close();
@@ -48,18 +82,7 @@ namespace Csharp2SQLLibrary
                 return null;
             }
             reader.Read();
-            var vendor = new Vendor
-            {
-                Id = Convert.ToInt32(reader["Id"]),
-                Code = Convert.ToString(reader["Code"]),
-                Name = Convert.ToString(reader["Name"]),
-                Address = Convert.ToString(reader["Address"]),
-                City = Convert.ToString(reader["City"]),
-                State = Convert.ToString(reader["State"]),
-                Zip = Convert.ToString(reader["Zip"]),
-                Phone = Convert.ToString(reader["Phone"]),
-                Email = Convert.ToString(reader["Email"])
-            };
+            var vendor = FillVendorFromSqlRow(reader);
             reader.Close();
             return vendor;
 
@@ -132,11 +155,5 @@ namespace Csharp2SQLLibrary
 
 
 
-        //dependancy injection
-        public VendorsController(Connection connection)
-        {
-            //left side is parameter right side is property
-            VendorsController.connection = connection;
-        }
      }
 }

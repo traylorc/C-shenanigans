@@ -24,7 +24,6 @@ namespace Csharp2SQLLibrary
         }
 
 
-
         //create user instance
         public bool Change(User user)
         {
@@ -172,7 +171,6 @@ namespace Csharp2SQLLibrary
             sqldatareader.Close();
             return user;
         }
-
 
 
 
