@@ -62,13 +62,13 @@ namespace Csharp2SQLLibrary
             return (rowsaffected == 1);
         }
 
-        public bool Remove(Product product)
+        public bool Remove(int id)
         {
             var sql = $" DELETE From Products " +
                        " Where Id = @id; ";
 
             var cmd = new SqlCommand(sql, connection.SqlConn);
-            cmd.Parameters.AddWithValue("@id", product.Id);
+            cmd.Parameters.AddWithValue("@id", id);
             var rowsaffected = cmd.ExecuteNonQuery();
 
             return (rowsaffected == 1);

@@ -9,24 +9,24 @@ namespace Csharp2SQL
         static void Main(string[] args)
         {
 
-            var sqlconn = new Connection("localhost\\sqlexpress", "PrsDb");
+            var sqlconn = new Connection("localhost\\sqlexpress01", "PrsDb");
 
 
             var newProduct = new Product()
             {
                 Id = 0,
-                PartNbr = "Ball",
-                Name = "Basket",
-                Price = 20,
-                Unit = "Each",
+                PartNbr = "4444",
+                Name = "FNAF Hoodie",
+                Price = 19.99m,
+                Unit = "each",
                 PhotoPath = null,
                 VendorId = 0
             };
             var productsController = new ProductController(sqlconn);
-           // var success = productsController.Create(newProduct, "AMZ");
+            //var success = productsController.Create(newProduct, "GME");
 
-            var product1 = productsController.GetByPk(4);
-            //var success = productsController.Remove(product1);
+            var product1 = productsController.GetByPk(3);
+           // var success = productsController.Remove(product1.Id);
 
             var products = productsController.GetAllProducts();
 
