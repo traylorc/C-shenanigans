@@ -39,7 +39,7 @@ namespace Csharp2SQLLibrary
             cmd.Parameters.AddWithValue("@userid", Request.UserId);
             cmd.Parameters.AddWithValue("@description", Request.Description);
             cmd.Parameters.AddWithValue("@justification", Request.Justification);
-            cmd.Parameters.AddWithValue("@rejectreasoning", Request.RejectReasoning);
+            cmd.Parameters.AddWithValue("@rejectreasoning", (object)Request.RejectReasoning ?? DBNull.Value); 
             cmd.Parameters.AddWithValue("@deliverymode", Request.DeliveryMode);
             cmd.Parameters.AddWithValue("@status", Request.Status);
             cmd.Parameters.AddWithValue("@total", Request.Total);
@@ -53,11 +53,11 @@ namespace Csharp2SQLLibrary
             return Create(request);
         }
 
-        public bool Create (Request request)
+        public bool Create(Request request)
         {
-            var sql = " Insert into Requests" +
-                " (UserId, Description, Justification, RejectReasoning, DeliveryMode, Status, Total)" +
-                "Values (@userid, @description, @justification, @rejectreasonint, @deliverymode, @status, @total);";
+            var sql = $" INSERT into Requests" +
+                " (UserId, Description, Justification, RejectReasoning, DeliveryMode, Status, Total) " +
+                " VALUES (@userid, @description, @justification, @rejectreasoning, @deliverymode, @status, @total); ";
             var cmd = new SqlCommand(sql, connection.SqlConn);
 
             FillCmdParFromSqlRowsForRequests(cmd, request);
@@ -65,9 +65,11 @@ namespace Csharp2SQLLibrary
             var rowsaffected = cmd.ExecuteNonQuery();
             return (rowsaffected == 1);
         }
+
+
         public bool Change(Request request)
         {
-            var sql = " Update Requests set" +
+            var sql = $" Update Requests set" +
                 " (UserId, Description, Justification, RejectReasoning, DeliveryMode, Status, Total)" +
                 "Values (@userid, @description, @justification, @rejectreasonint, @deliverymode, @status, @total);";
             var cmd = new SqlCommand(sql, connection.SqlConn);

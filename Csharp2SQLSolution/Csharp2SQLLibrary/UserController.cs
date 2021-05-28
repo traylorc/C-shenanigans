@@ -46,7 +46,7 @@ namespace Csharp2SQLLibrary
 
         public bool Create(User user)
         {
-            var sql = " INSERT into Users " +
+            var sql = $" INSERT into Users " +
                 " (Username, Password, Firstname, Lastname, Phone, Email, IsReviewer, IsAdmin)" +
                 "VALUES (@username, @password, @firstname, @lastname, @phone, @email, @isReviewer, @isAdmin);";
             var cmd = new SqlCommand(sql, connection.SqlConn);
@@ -59,7 +59,7 @@ namespace Csharp2SQLLibrary
 
         public bool Change(User user)
         {
-            var sql = " Update Users set " +
+            var sql = $" Update Users set " +
                 " (Username, Password, Firstname, Lastname, Phone, Email, IsReviewer, IsAdmin)" +
                 "VALUES (@username, @password, @firstname, @lastname, @phone, @email, @isReviewer, @isAdmin);";
             var cmd = new SqlCommand(sql, connection.SqlConn);
@@ -72,7 +72,7 @@ namespace Csharp2SQLLibrary
 
         public bool Remove(User user)
         {
-            var sql = " DELETE from Users" +
+            var sql = $" DELETE from Users" +
                     "where Id = @id;";
 
             var cmd = new SqlCommand(sql, connection.SqlConn);

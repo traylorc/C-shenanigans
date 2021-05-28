@@ -22,6 +22,45 @@ namespace Csharp2SQL
 
         static void Main(string[] args)
         {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             var sum1 = (from i in ints
                         where i % 7 == 0 || i % 11 == 0
                         select i).Sum();

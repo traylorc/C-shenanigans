@@ -53,7 +53,7 @@ namespace Csharp2SQLLibrary
 
         public bool Create(Product product)
         {
-            var sql = " INSERT into Products" +
+            var sql = $" INSERT into Products" +
                 " (PartNbr, Name, Price, Unit, PhotoPath, VendorId) " +
                 " VALUES (@partnbr, @name, @price, @unit, @photopath, @vendorid); ";
             var cmd = new SqlCommand(sql, connection.SqlConn);
@@ -66,7 +66,7 @@ namespace Csharp2SQLLibrary
 
         public bool Change(Product product)
         {
-            var sql = " Update Products set" +
+            var sql = $" Update Products set" +
               " (PartNbr, Name, Price, Unit, PhotoPath, VendorId) " +
               " VALUES (@partnbr, @name, @price, @unit, @photopath, @vendorid); ";
             var cmd = new SqlCommand(sql, connection.SqlConn);
