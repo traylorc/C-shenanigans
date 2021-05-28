@@ -13,10 +13,25 @@ namespace Csharp2SQLLibrary
         {
             ProductController.connection = connection;
         }
-        
 
-       
-        
+        public Product GetByName(string name)
+        {
+            var sql = "SELECT * from Products Where Name = @name;";
+            var cmd = new SqlCommand(sql, connection.SqlConn);
+            cmd.Parameters.AddWithValue("@name", name);
+            var reader = cmd.ExecuteReader();
+            if (!reader.HasRows)
+            {
+                reader.Close();
+                return null;
+            }
+            reader.Read();
+            var product = FillProductFromSqlRow(reader);
+            reader.Close();
+            return product;
+        }
+
+
         private void FillCmdParFromSqlRowsForProducts(SqlCommand cmd, Product product)
         {
             cmd.Parameters.AddWithValue("@partnbr", product.PartNbr);

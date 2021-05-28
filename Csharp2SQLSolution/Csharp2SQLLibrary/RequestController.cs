@@ -14,16 +14,35 @@ namespace Csharp2SQLLibrary
             RequestController.connection = connection;
         }
 
-
-        private void FillCmdParFromSqlRowsForResults(SqlCommand cmd, Request result)
+        public Request GetByDescription(string description)
         {
-            cmd.Parameters.AddWithValue("@userid", result.UserId);
-            cmd.Parameters.AddWithValue("@description", result.Description);
-            cmd.Parameters.AddWithValue("@justification", result.Justification);
-            cmd.Parameters.AddWithValue("@rejectreasoning", result.RejectReasoning);
-            cmd.Parameters.AddWithValue("@deliverymode", result.DeliveryMode);
-            cmd.Parameters.AddWithValue("@status", result.Status);
-            cmd.Parameters.AddWithValue("@total", result.Total);
+            var sql = "SELECT * from Results Where Description = @description;";
+            var cmd = new SqlCommand(sql, connection.SqlConn);
+            cmd.Parameters.AddWithValue("@description", description);
+            var reader = cmd.ExecuteReader();
+            if (!reader.HasRows)
+            {
+                reader.Close();
+                return null;
+            }
+            reader.Read();
+            var request = FillRequestFromSqlRow(reader);
+            reader.Close();
+            return request;
+        }
+
+
+
+
+        private void FillCmdParFromSqlRowsForRequests(SqlCommand cmd, Request Request)
+        {
+            cmd.Parameters.AddWithValue("@userid", Request.UserId);
+            cmd.Parameters.AddWithValue("@description", Request.Description);
+            cmd.Parameters.AddWithValue("@justification", Request.Justification);
+            cmd.Parameters.AddWithValue("@rejectreasoning", Request.RejectReasoning);
+            cmd.Parameters.AddWithValue("@deliverymode", Request.DeliveryMode);
+            cmd.Parameters.AddWithValue("@status", Request.Status);
+            cmd.Parameters.AddWithValue("@total", Request.Total);
         }
 
         public bool Create(Request request, string UserUsername)
@@ -41,7 +60,7 @@ namespace Csharp2SQLLibrary
                 "Values (@userid, @description, @justification, @rejectreasonint, @deliverymode, @status, @total);";
             var cmd = new SqlCommand(sql, connection.SqlConn);
 
-            FillCmdParFromSqlRowsForResults(cmd, request);
+            FillCmdParFromSqlRowsForRequests(cmd, request);
 
             var rowsaffected = cmd.ExecuteNonQuery();
             return (rowsaffected == 1);
@@ -53,7 +72,7 @@ namespace Csharp2SQLLibrary
                 "Values (@userid, @description, @justification, @rejectreasonint, @deliverymode, @status, @total);";
             var cmd = new SqlCommand(sql, connection.SqlConn);
 
-            FillCmdParFromSqlRowsForResults(cmd, request);
+            FillCmdParFromSqlRowsForRequests(cmd, request);
 
             var rowsaffected = cmd.ExecuteNonQuery();
             return (rowsaffected == 1);
