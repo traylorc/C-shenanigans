@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PoWebAPI.Data;
 
 namespace PoWebAPI.Migrations
 {
     [DbContext(typeof(PoContext))]
-    partial class PoContextModelSnapshot : ModelSnapshot
+    [Migration("20210603195713_item table")]
+    partial class itemtable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -79,31 +81,6 @@ namespace PoWebAPI.Migrations
                     b.ToTable("Items");
                 });
 
-            modelBuilder.Entity("PoWebAPI.Models.Poline", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("ItemId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PurchaseOrderId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ItemId");
-
-                    b.HasIndex("PurchaseOrderId");
-
-                    b.ToTable("Polines");
-                });
-
             modelBuilder.Entity("PoWebAPI.Models.PurchaseOrder", b =>
                 {
                     b.Property<int>("Id")
@@ -135,21 +112,6 @@ namespace PoWebAPI.Migrations
                     b.HasIndex("EmployeeId");
 
                     b.ToTable("PurchaseOrders");
-                });
-
-            modelBuilder.Entity("PoWebAPI.Models.Poline", b =>
-                {
-                    b.HasOne("PoWebAPI.Models.Item", "Item")
-                        .WithMany()
-                        .HasForeignKey("ItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("PoWebAPI.Models.PurchaseOrder", "PurchaseOrder")
-                        .WithMany()
-                        .HasForeignKey("PurchaseOrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("PoWebAPI.Models.PurchaseOrder", b =>

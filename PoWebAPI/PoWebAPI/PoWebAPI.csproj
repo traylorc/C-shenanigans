@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20210603153130_purchase order table controller.cs" />
+    <Compile Remove="Migrations\20210603153130_purchase order table controller.Designer.cs" />
+    <Compile Remove="Migrations\20210603202006_POline table.cs" />
+    <Compile Remove="Migrations\20210603202006_POline table.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.entityframeworkcore.sqlserver" Version="3.1.15" />
     <PackageReference Include="Microsoft.entityframeworkcore.tools" Version="3.1.15">
       <PrivateAssets>all</PrivateAssets>
